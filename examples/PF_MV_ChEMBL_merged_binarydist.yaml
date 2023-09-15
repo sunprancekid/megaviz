@@ -1,0 +1,33 @@
+---
+    
+    # location to save files to
+    'settings':
+      'save_dir': './data/malaria/curated/'
+      'save_as': 'malaria_ChEMBL_curated'
+      'palette': 'rocket'
+
+    # details about operation
+    'operation':
+
+      'binary_value_distribution':
+        'type': 'binary_distribution'
+        'title': 'Distribution of Values in P.F. Activity Dataset'
+        'subtitle': '(dataset = ChEMBL IC50 + EC50)' 
+        'save_to': './data/malaria/curated/ChEMBL_merged/'
+        'data': 'ChEMBL_merged'
+        'val_col': 'value'
+        'relation': 'relation'
+
+
+    # details about data
+    'data':
+      'ChEMBL_merged': 
+        'data_title': 'ChEMBL Merged (IC50 + EC50)'
+        'file_name': './data/malaria/curated/ChEMBL_merged/curated.csv'
+        'SMILES': 'curated_smiles'
+        'INCHI': 'inchi_keys'
+        'value': 'value'
+        'relation': 'value_relation'
+
+    'model':
+      'none'
